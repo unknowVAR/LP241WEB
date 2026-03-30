@@ -1,0 +1,116 @@
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made in LP - Solutions Digitales Tout-en-Un</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .carousel-item { display: none; }
+        .carousel-item.active { display: block; animation: fadeIn 0.5s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+    <!-- Header -->
+    <header class="py-16 text-center bg-gradient-to-b from-gray-900 to-black">
+        <h1 class="text-5xl font-black text-yellow-500 uppercase tracking-tighter">Site + App + Maintenance</h1>
+        <p class="text-gray-400 mt-4 text-lg italic">La digitalisation complète de votre restaurant, sans stress technique.</p>
+    </header>
+
+    <!-- Section Carrousel -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <div id="carousel" class="relative bg-gray-900 rounded-3xl overflow-hidden border-2 border-yellow-500/20 shadow-2xl">
+            
+            <!-- PACK 1: STARTER (Le basique Web+App) -->
+            <div class="carousel-item active p-8 md:p-16 text-center">
+                <div class="mb-6"><span class="bg-yellow-500 text-black px-4 py-1 rounded-full font-bold text-sm uppercase">Pack Starter</span></div>
+                <h3 class="text-4xl font-extrabold mb-4 uppercase text-white tracking-tight">Le Combo "Visibilité"</h3>
+                <p class="text-gray-400 mb-8 max-w-xl mx-auto">Une page web vitrine + une Web-App installable sur téléphone. Idéal pour être présent partout immédiatement.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 text-sm font-semibold uppercase">
+                    <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">📄 Site Simple Page</div>
+                    <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">📱 Application Web</div>
+                    <div class="bg-yellow-500/10 text-yellow-500 p-4 rounded-xl border border-yellow-500/30">🛠️ Entretien Mensuel</div>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="text-5xl font-black text-white tracking-tighter">15 000 <span class="text-2xl text-gray-500 italic font-light">FCFA</span></div>
+                    <div class="text-yellow-500 font-bold text-lg">+ 5 000 FCFA / mois <span class="text-gray-400 font-normal text-sm">(Maintenance site & app)</span></div>
+                </div>
+            </div>
+
+            <!-- PACK 2: BUSINESS (Le standard pro) -->
+            <div class="carousel-item p-8 md:p-16 text-center">
+                <div class="mb-6"><span class="bg-blue-600 text-white px-4 py-1 rounded-full font-bold text-sm uppercase">Pack Business</span></div>
+                <h3 class="text-4xl font-extrabold mb-4 uppercase text-white tracking-tight">Le Combo "Pro"</h3>
+                <p class="text-gray-400 mb-8 max-w-xl mx-auto">Site multi-pages (Menu HD, Réservations) + Application Android dédiée. Pour les restaurants qui veulent dominer le quartier.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 text-sm font-semibold uppercase">
+                    <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">🌐 Site Multi-pages</div>
+                    <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">🤖 App Android Pro</div>
+                    <div class="bg-blue-600/10 text-blue-400 p-4 rounded-xl border border-blue-600/30">⚙️ Suivi Technique 24/7</div>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="text-5xl font-black text-white tracking-tighter">65 000 <span class="text-2xl text-gray-500 italic font-light">FCFA</span></div>
+                    <div class="text-blue-400 font-bold text-lg">+ 10 000 FCFA / mois <span class="text-gray-400 font-normal text-sm">(Maintenance + Hébergement)</span></div>
+                </div>
+            </div>
+
+            <!-- PACK 3: ELITE (Le haut de gamme) -->
+            <div class="carousel-item p-8 md:p-16 text-center">
+                <div class="mb-6"><span class="bg-purple-600 text-white px-4 py-1 rounded-full font-bold text-sm uppercase">Pack Elite</span></div>
+                <h3 class="text-4xl font-extrabold mb-4 uppercase text-white tracking-tight">Le Combo "Prestige"</h3>
+                <p class="text-gray-400 mb-8 max-w-xl mx-auto">E-commerce complet (Commande & Paiement) + Application iOS & Android + Gestion de stock automatisée.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 text-sm font-semibold uppercase">
+                    <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">🛒 Site E-commerce</div>
+                    <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">🍏 App iOS & Android</div>
+                    <div class="bg-purple-600/10 text-purple-400 p-4 rounded-xl border border-purple-600/30">🛡️ Maintenance Totale</div>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="text-5xl font-black text-white tracking-tighter">150 000 <span class="text-2xl text-gray-500 italic font-light">FCFA</span></div>
+                    <div class="text-purple-400 font-bold text-lg">+ 25 000 FCFA / mois <span class="text-gray-400 font-normal text-sm">(Soutien VIP + Mises à jour menu)</span></div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <button onclick="changeSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 rounded-full hover:bg-yellow-500 transition">❮</button>
+            <button onclick="changeSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 rounded-full hover:bg-yellow-500 transition">❯</button>
+        </div>
+    </section>
+
+    <!-- Section Formulaire -->
+    <section class="max-w-4xl mx-auto px-6 py-20">
+        <div class="bg-gray-900 border border-gray-800 p-10 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-bold mb-8 text-center uppercase tracking-widest">Demander un Devis</h2>
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Nom du Restaurant" class="bg-black border border-gray-700 p-4 rounded-xl outline-none focus:border-yellow-500">
+                    <select class="bg-black border border-gray-700 p-4 rounded-xl outline-none focus:border-yellow-500 text-gray-400">
+                        <option>Choisir le Pack Combo</option>
+                        <option>Starter (15 000F + 5 000F/mois)</option>
+                        <option>Business (65 000F + 10 000F/mois)</option>
+                        <option>Elite (150 000F + 25 000F/mois)</option>
+                    </select>
+                </div>
+                <textarea rows="4" placeholder="Quel est votre spécialité culinaire ?" class="w-full bg-black border border-gray-700 p-4 rounded-xl outline-none focus:border-yellow-500"></textarea>
+                <button class="w-full bg-white text-black font-black py-5 rounded-xl hover:bg-yellow-500 transition uppercase tracking-widest">Réserver mon installation</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>

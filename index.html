@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- === CONFIGURATION SEO GOOGLE === -->
+    <title>Made by L-P| Site Web + App + Maintenance pour Restaurants</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/L-P.png">
+    <meta name="description" content="Digitalisez votre restaurant : Site web, Application mobile et Maintenance incluse. Packs dès 15.000 FCFA. Contactez-nous au 065526862.">
+    <meta name="keywords" content="création site web restaurant, application mobile pizzeria, menu digital, maintenance informatique restaurant, booster ventes restaurant">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://votre-site.com">
+
+    <!-- Styles & Icones -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .carousel-item { display: none; transition: opacity 0.5s ease-in-out; }
+        .carousel-item.active { display: block; animation: fadeIn 0.6s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .gradient-text { background: linear-gradient(to right, #facc15, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-black text-white font-sans selection:bg-yellow-500 selection:text-black">
+
+    <!-- Navigation / Brand -->
+    <nav class="p-6 border-b border-gray-800 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-black tracking-tighter">Made by <span class="text-yellow-500">L-P</span></div>
+        <a href="https://wa.me/241065526862" class="bg-green-600 hover:bg-green-500 px-4 py-2 rounded-lg font-bold text-sm transition">
+            <i class="fa-brands fa-whatsapp mr-2"></i>Aide Directe
+        </a>
+    </nav>
+
+    <!-- Header Hero -->
+    <header class="py-16 text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter">Votre Restaurant <br><span class="gradient-text text-6xl">100% Digital</span></h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto italic">Nous créons votre site, votre application et nous gérons tout l'entretien mensuel pour vous.</p>
+    </header>
+
+    <!-- CARROUSEL DES PACKS -->
+    <section class="max-w-5xl mx-auto px-4 mb-20">
+        <div id="carousel" class="relative bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-800 shadow-[0_0_50px_rgba(234,179,8,0.1)]">
+            
+            <!-- PACK 1: STARTER -->
+            <div class="carousel-item active p-10 md:p-16 text-center">
+                <div class="inline-block bg-yellow-500/10 text-yellow-500 px-4 py-1 rounded-full text-xs font-bold uppercase mb-6 border border-yellow-500/20">Pack Starter</div>
+                <h3 class="text-4xl font-black mb-8 uppercase tracking-tight">Le Combo "Visibilité"</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 text-xs font-bold uppercase">
+                    <div class="bg-black/40 p-4 rounded-2xl border border-gray-800 italic">📄 Site Simple Page</div>
+                    <div class="bg-black/40 p-4 rounded-2xl border border-gray-800 italic">📱 Application Web</div>
+                    <div class="bg-yellow-500 text-black p-4 rounded-2xl">🛠️ Entretien : 5.000F/mois</div>
+                </div>
+                <div class="text-6xl font-black text-white">15 000 <span class="text-2xl text-gray-500 font-light italic">FCFA</span></div>
+            </div>
+
+            <!-- PACK 2: BUSINESS -->
+            <div class="carousel-item p-10 md:p-16 text-center">
+                <div class="inline-block bg-blue-500/10 text-blue-400 px-4 py-1 rounded-full text-xs font-bold uppercase mb-6 border border-blue-500/20">Pack Business</div>
+                <h3 class="text-4xl font-black mb-8 uppercase tracking-tight">Le Combo "Pro"</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 text-xs font-bold uppercase">
+                    <div class="bg-black/40 p-4 rounded-2xl border border-gray-800 italic">🌐 Site Multi-pages</div>
+                    <div class="bg-black/40 p-4 rounded-2xl border border-gray-800 italic">🤖 App Android Pro</div>
+                    <div class="bg-blue-600 text-white p-4 rounded-2xl">🛠️ Entretien : 10.000F/mois</div>
+                </div>
+                <div class="text-6xl font-black text-white">65 000 <span class="text-2xl text-gray-500 font-light italic">FCFA</span></div>
+            </div>
+
+            <!-- PACK 3: ELITE -->
+            <div class="carousel-item p-10 md:p-16 text-center">
+                <div class="inline-block bg-purple-500/10 text-purple-400 px-4 py-1 rounded-full text-xs font-bold uppercase mb-6 border border-purple-500/20">Pack Elite</div>
+                <h3 class="text-4xl font-black mb-8 uppercase tracking-tight">Le Combo "Prestige"</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 text-xs font-bold uppercase">
+                    <div class="bg-black/40 p-4 rounded-2xl border border-gray-800 italic">🛒 E-commerce Complet</div>
+                    <div class="bg-black/40 p-4 rounded-2xl border border-gray-800 italic">🍏 App iOS & Android</div>
+                    <div class="bg-purple-600 text-white p-4 rounded-2xl">🛠️ Entretien : 25.000F/mois</div>
+                </div>
+                <div class="text-6xl font-black text-white">150 000 <span class="text-2xl text-gray-500 font-light italic">FCFA</span></div>
+            </div>
+
+            <!-- Navigation -->
+            <button onclick="changeSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-yellow-500 rounded-full transition flex items-center justify-center border border-gray-700">❮</button>
+            <button onclick="changeSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-yellow-500 rounded-full transition flex items-center justify-center border border-gray-700">❯</button>
+        </div>
+    </section>
+
+    <!-- SECTION FORMULAIRE -->
+    <section class="max-w-4xl mx-auto px-6 py-10">
+        <div class="bg-gray-900 p-8 md:p-12 rounded-[2.5rem] border border-gray-800 shadow-2xl">
+            <h2 class="text-3xl font-black mb-10 text-center uppercase tracking-widest italic text-yellow-500 italic font-black">Réserver mon installation</h2>
+            <form id="orderForm" class="space-y-6">
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase mb-2 ml-2">Nom de votre établissement</label>
+                    <input type="text" id="restoName" required placeholder="Ex: Pizzeria Napoli" class="w-full bg-black border border-gray-800 p-5 rounded-2xl outline-none focus:border-yellow-500 transition text-lg">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase mb-2 ml-2">Choisissez votre formule</label>
+                    <select id="packSelected" class="w-full bg-black border border-gray-800 p-5 rounded-2xl outline-none focus:border-yellow-500 transition text-lg">
+                        <option value="Starter">Pack Starter (15 000F + 5 000F/mois)</option>
+                        <option value="Business">Pack Business (65 000F + 10 000F/mois)</option>
+                        <option value="Elite">Pack Elite (150 000F + 25 000F/mois)</option>
+                    </select>
+                </div>
+                <button type="button" onclick="sendOrder()" class="w-full bg-yellow-500 text-black font-black py-6 rounded-2xl hover:bg-yellow-400 transition-all uppercase tracking-widest text-lg shadow-[0_10px_30px_rgba(234,179,8,0.3)] transform hover:-translate-y-1">
+                     envoyer ma commande maintenant
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER SOCIAL -->
+    <footer class="py-20 border-t border-gray-900 bg-black text-center">
+        <p class="text-yellow-500 font-black tracking-widest mb-10 uppercase">Suivez-nous sur les réseaux !</p>
+        <div class="flex justify-center gap-10 mb-12">
+            <a href="https://facebook.com/https://www.facebook.com/pierre.lp.587/about/?fb_profile_edit_entry_point=%7B%22click_point%22%3A%22edit_profile_button%22%2C%22feature%22%3A%22profile_header%22%7D&id=100055979654002&sk=about" target="_blank" class="text-4xl text-gray-600 hover:text-blue-500 transition-all transform hover:scale-125"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/241065526862" target="_blank" class="text-4xl text-gray-600 hover:text-green-500 transition-all transform hover:scale-125"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/https://www.instagram.com/dada_pit/" target="_blank" class="text-4xl text-gray-600 hover:text-pink-500 transition-all transform hover:scale-125"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="text-gray-600 text-sm font-medium">© 2026 MADE BY L-P - AGENCE DE DIGITALISATION <br> <span class="text-yellow-500/50 italic font-bold">Contact Whatsapp : +241 065 52 68 62</span></p>
+    </footer>
+
+    <!-- SCRIPT LOGIQUE -->
+    <script>
+        // 1. Gestion du carrousel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // 2. Logique d'envoi WhatsApp + Mail
+        function sendOrder() {
+            const name = document.getElementById('restoName').value;
+            const pack = document.getElementById('packSelected').value;
+            const phone = "241065526862"; // Ton numéro WhatsApp (indicatif inclus sans le +)
+            const email = "ombalobebe5@gmail.com"; // TON ADRESSE EMAIL ICI
+
+            if(name.trim() === "") {
+                alert(".");
+                return;
+            }
+
+            const message = `Bonjour ! Je souhaite commander le pack *${pack}* pour mon restaurant *${name}*. Merci de me recontacter pour lancer l'installation !`;
+
+            // Envoi WhatsApp (Ouverture dans un nouvel onglet)
+            const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+
+            // Envoi Mail (Ouverture client mail après 1 seconde)
+            const mailtoUrl = `mailto:${email}?subject=COMMANDE PACK ${pack.toUpperCase()}&body=${encodeURIComponent(message)}`;
+            setTimeout(() => {
+                window.location.href = mailtoUrl;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
